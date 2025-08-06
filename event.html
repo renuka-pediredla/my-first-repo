@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Planning - [Your Event Name]</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px;
+      background: white;
+      border-radius: 8px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    form input, form textarea, form select {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #0077cc;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>[Your Event Name]</h1>
+    <p>Organized by [Your Organization]</p>
+  </header>
+
+  <section>
+    <h2>Event Details</h2>
+    <p><strong>Date:</strong> August 15, 2025</p>
+    <p><strong>Time:</strong> 10:00 AM - 4:00 PM</p>
+    <p><strong>Location:</strong> City Hall, Downtown</p>
+    <p><strong>Description:</strong> Join us for a day of networking, learning, and fun!</p>
+  </section>
+
+  <section>
+    <h2>Event Schedule</h2>
+    <ul>
+      <li>10:00 AM - Opening Ceremony</li>
+      <li>11:00 AM - Guest Speaker</li>
+      <li>1:00 PM - Lunch & Networking</li>
+      <li>2:00 PM - Workshop Sessions</li>
+      <li>4:00 PM - Closing Remarks</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Register for the Event</h2>
+    <form action="submit_form.php" method="POST">
+      <input type="text" name="name" placeholder="Your Full Name" required />
+      <input type="email" name="email" placeholder="Your Email Address" required />
+      <select name="session" required>
+        <option value="">Select Session</option>
+        <option value="morning">Morning Workshop</option>
+        <option value="afternoon">Afternoon Workshop</option>
+      </select>
+      <textarea name="message" rows="4" placeholder="Additional Info (optional)"></textarea>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>Email: contact@yourevent.com</p>
+    <p>Phone: (123) 456-7890</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Your Event Name. All rights reserved.
+  </footer>
+
+</body>
+</html>
